@@ -55,19 +55,18 @@ li:first-letter {
   font-weight: 400;
 }
 
-.weather-temperature.units {
+.weather-temperature .units {
   position: relative;
   font-size: 16px;
-  top: -34px;
+  vertical-align: top;
 }
 
-.weather-temperature.active {
+.weather-temperature .active {
   color: rgb(33, 33, 33);
   cursor: default;
-  text-decoration: none;
 }
 
-.weather-temperature.active:hover {
+.weather-temperature .active:hover {
   text-decoration: none;
 }
 

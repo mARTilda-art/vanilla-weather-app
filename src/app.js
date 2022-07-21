@@ -140,4 +140,4 @@ let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
 
 // global search function
-search("Rome");
+search("London");
