@@ -59,6 +59,7 @@ li:first-letter {
   position: relative;
   font-size: 16px;
   vertical-align: top;
+  font-weight: bold;
 }
 
 .weather-temperature .active {
@@ -78,11 +79,13 @@ li:first-letter {
 
 .weather-forecast-date {
   font-size: 16px;
+  color: #000;
   opacity: 0.5;
 }
 
 .weather-forecast-temperature-min {
   opacity: 0.5;
+  font-size: 13px;
 }
 
 .weather-forecast-temperatures {
