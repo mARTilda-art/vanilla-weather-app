@@ -133,3 +133,14 @@ li:first-letter {
   font-weight: bold;
   color: green;
 }
+
+.conversionalert {
+  padding: 10px;
+  border: 1px solid #dadde1;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.degree-input {
+  font-size: 15px;
+}
