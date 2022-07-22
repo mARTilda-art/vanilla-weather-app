@@ -144,3 +144,8 @@ li:first-letter {
 .degree-input {
   font-size: 15px;
 }
+
+.card {
+  font-size: 13px;
+  font-weight: bold;
+}

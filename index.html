@@ -56,23 +56,28 @@
               </div>
             </div>
           </form>
-          <div class="overview">
-            <h2 id="city"></h2>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
-          <div class="row">
-            <div class="col-5">
+
+          <div class="row overview">
+            <div class="col-6">
+              <h2 id="city"></h2>
+              <ul>
+                <li>Last updated: <span id="date"></span></li>
+                <li id="description"></li>
+              </ul>
+            </div>
+
+            <div class="col-6">
               <div class="d-flex weather-temperature">
-                <img src="" alt="Clear" id="icon" class="float-left" />
-                <div class="float-left">
+                <img src="" alt="Clear" id="icon" class="float-right" />
+                <div class="float-right">
                   <strong id="temperature"></strong>
                   <span class="units"> °C </span>
                 </div>
               </div>
             </div>
+          </div>
+
+          <div class="row">
             <div class="col-7">
               <table class="details table table-striped">
                 <thead>
@@ -126,6 +131,15 @@
                   </tr>
                 </tbody>
               </table>
+            </div>
+
+            <div class="col-5">
+              <div class="card" style="width: 12rem">
+                <div class="card-body">
+                  <p class="card-text">Perfect weather for:</p>
+                  <img src="..." class="card-img-top" alt="..." />
+                </div>
+              </div>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
