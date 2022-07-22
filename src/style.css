@@ -113,3 +113,9 @@ li:first-letter {
   border: 1px solid #dadde1;
   border-radius: 5px;
 }
+
+.details {
+  text-align: center;
+  font-size: 13px;
+  table-layout: auto;
+}

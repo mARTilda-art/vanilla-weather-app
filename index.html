@@ -55,7 +55,7 @@
             </ul>
           </div>
           <div class="row">
-            <div class="col-6">
+            <div class="col-5">
               <div class="d-flex weather-temperature">
                 <img src="" alt="Clear" id="icon" class="float-left" />
                 <div class="float-left">
@@ -67,29 +67,59 @@
                 </div>
               </div>
             </div>
-            <div class="col-6">
-              <ul>
-                <li>
-                  <i class="fa-solid fa-water"></i> humidity:
-                  <span id="humidity"></span> %
-                </li>
-                <li>
-                  <i class="fa-solid fa-wind"></i> wind:
-                  <span id="wind"></span> m/s
-                </li>
-                <li>
-                  <i class="fa-solid fa-weight-hanging"></i> pressure:
-                  <span id="pressure"></span> mb
-                </li>
-                <li>
-                  <i class="fa-solid fa-sun"></i> sunrise:
-                  <span id="sunrise"></span>
-                </li>
-                <li>
-                  <i class="fa-solid fa-moon"></i> sunset:
-                  <span id="sunset"></span>
-                </li>
-              </ul>
+            <div class="col-7">
+              <table class="details table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col" colspan="1">icon</th>
+                    <th scope="col" colspan="3">type</th>
+                    <th scope="col" colspan="2">value</th>
+                    <th scope="col" colspan="1">unit</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row" colspan="1">
+                      <i class="fa-solid fa-water"></i>
+                    </th>
+                    <td colspan="3">humidity</td>
+                    <td colspan="2"><span id="humidity"></span></td>
+                    <td colspan="1">%</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="1">
+                      <i class="fa-solid fa-wind"></i>
+                    </th>
+                    <td colspan="3">wind</td>
+                    <td colspan="2"><span id="wind"></span></td>
+                    <td colspan="1">m/s</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="1">
+                      <i class="fa-solid fa-weight-hanging"></i>
+                    </th>
+                    <td colspan="3">pressure</td>
+                    <td colspan="2"><span id="pressure"></span></td>
+                    <td colspan="1">mb</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="1">
+                      <i class="fa-solid fa-sun"></i>
+                    </th>
+                    <td colspan="3">sunrise</td>
+                    <td colspan="2"><span id="sunrise"></span></td>
+                    <td colspan="1">hh:mm</td>
+                  </tr>
+                  <tr>
+                    <th scope="row" colspan="1">
+                      <i class="fa-solid fa-moon"></i>
+                    </th>
+                    <td colspan="3">sunset</td>
+                    <td colspan="2"><span id="sunset"></span></td>
+                    <td colspan="1">hh:mm</td>
+                  </tr>
+                </tbody>
+              </table>
             </div>
           </div>
           <div class="weather-forecast" id="forecast"></div>
