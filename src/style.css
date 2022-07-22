@@ -119,3 +119,17 @@ li:first-letter {
   font-size: 13px;
   table-layout: auto;
 }
+
+.btn-primary:hover {
+  background-color: white;
+  border-color: blue;
+  font-weight: bold;
+  color: blue;
+}
+
+.btn-success:hover {
+  background-color: white;
+  border-color: green;
+  font-weight: bold;
+  color: green;
+}
