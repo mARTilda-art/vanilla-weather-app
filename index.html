@@ -10,12 +10,21 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/b18b5e2fa2.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <link rel="stylesheet" href="src/style.css" />
-    <title>Weather App</title>
+    <title>WeatherFrog</title>
   </head>
   <body>
     <div class="container">
+      <h1><i class="fa-solid fa-frog"></i> Weather Frog</h1>
       <div class="weather-app-wrapper">
         <div class="weather-app">
           <form id="search-form" class="mb-3">
@@ -39,7 +48,7 @@
             </div>
           </form>
           <div class="overview">
-            <h1 id="city"></h1>
+            <h2 id="city"></h2>
             <ul>
               <li>Last updated: <span id="date"></span></li>
               <li id="description"></li>
