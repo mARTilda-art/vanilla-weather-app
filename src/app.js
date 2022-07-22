@@ -156,6 +156,18 @@ function getCurrentLocation(event) {
   navigator.geolocation.getCurrentPosition(searchLocation);
 }
 
+function alertFahrenheit(event) {
+  event.preventDefault();
+  let inputDegreeElement = document.querySelector("#degree-input");
+  let degreeCelsius = Math.round(inputDegreeElement.value);
+  let degreeFahrenheit = Math.round((inputDegreeElement.value * 9) / 5 + 32);
+  if (isNaN(inputDegreeElement.value)) {
+    alert("please try again and stick with a number this time");
+  } else {
+    alert(`${degreeCelsius} °C are ${degreeFahrenheit} °F. You are welcome!`);
+  }
+}
+
 // Current button
 let buttonCurrent = document.querySelector("#buttonCurrent");
 buttonCurrent.addEventListener("click", getCurrentLocation);
@@ -171,6 +183,9 @@ fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
 
 let celsiusLink = document.querySelector("#celsius-link");
 celsiusLink.addEventListener("click", displayCelsiusTemperature);
+
+let buttonConvert = document.querySelector("#buttonConvert");
+buttonConvert.addEventListener("click", alertFahrenheit);
 
 // global search function
 search("London");
