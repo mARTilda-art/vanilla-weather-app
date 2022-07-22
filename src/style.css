@@ -91,3 +91,9 @@ li:first-letter {
 .weather-forecast-temperatures {
   font-size: 13px;
 }
+
+.lightning {
+  margin: 20px auto;
+  margin-top: 20px;
+  padding: 10px;
+}
