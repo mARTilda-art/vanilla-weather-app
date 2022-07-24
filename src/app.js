@@ -83,6 +83,10 @@ function displayTemperature(response) {
   let iconElement = document.querySelector("#icon");
   let sunriseElement = document.querySelector("#sunrise");
   let sunsetElement = document.querySelector("#sunset");
+  let photoElement = document.querySelector("#photo");
+  let photoPartOne = `<img src=`;
+  let photoPartThree = `class="card-img-top"
+                      alt="photo" />`;
 
   // global variable
   celsiusTemperature = response.data.main.temp;
@@ -105,6 +109,50 @@ function displayTemperature(response) {
   sunsetElement.innerHTML = formatDate(response.data.sys.sunset * 1000).slice(
     -5
   );
+
+  let photoElementTwo = "";
+
+  if (descriptionElement.innerHTML.includes("rain")) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/1529360/pexels-photo-1529360.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else if (temperatureElement.innerHTML < 0) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/845906/pexels-photo-845906.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else if (
+    temperatureElement.innerHTML >= 0 &&
+    temperatureElement.innerHTML < 10
+  ) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/235615/pexels-photo-235615.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else if (
+    temperatureElement.innerHTML >= 10 &&
+    temperatureElement.innerHTML < 20
+  ) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/268261/pexels-photo-268261.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else if (
+    temperatureElement.innerHTML >= 20 &&
+    temperatureElement.innerHTML < 30
+  ) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/1089168/pexels-photo-1089168.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else if (
+    temperatureElement.innerHTML >= 30 &&
+    temperatureElement.innerHTML < 40
+  ) {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/1152359/pexels-photo-1152359.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  } else {
+    photoElement.innerHTML = `${photoPartOne}
+      "https://images.pexels.com/photos/712392/pexels-photo-712392.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+  ${photoPartThree}`;
+  }
 
   getForecast(response.data.coord);
 }
@@ -164,4 +212,4 @@ let buttonConvert = document.querySelector("#buttonConvert");
 buttonConvert.addEventListener("click", alertFahrenheit);
 
 // global search function
-search("London");
+search("Berlin");
