@@ -166,3 +166,7 @@ li:first-letter {
   font-weight: bold;
   background-color: transparent;
 }
+
+a:link {
+  color: #ffcf5e;
+}
