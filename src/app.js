@@ -212,4 +212,4 @@ let buttonConvert = document.querySelector("#buttonConvert");
 buttonConvert.addEventListener("click", alertFahrenheit);
 
 // global search function
-search("Berlin");
+search("Cottbus");
