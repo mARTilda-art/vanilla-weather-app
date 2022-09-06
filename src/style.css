@@ -170,3 +170,7 @@ li:first-letter {
 a:link {
   color: #ffcf5e;
 }
+
+.form-control {
+  max-width: 250px;
+}
